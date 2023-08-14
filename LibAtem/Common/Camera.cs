@@ -42,7 +42,6 @@ namespace LibAtem.Common
     }
 
     /// <summary>PTZ Control</summary>
-    /// <summary>PTZ Control</summary>
     public enum PtzControlFeature
     {
         /// <summary>
@@ -269,6 +268,7 @@ namespace LibAtem.Common
     /// <summary>
     /// <see cref="MediaFeature.TransportMode"/>
     /// </summary>
+    [Flags]
     public enum TransportFlags
     {
         Loop = 1<< 0,
@@ -994,6 +994,7 @@ namespace LibAtem.Common
     /// <summary>
     /// <see cref="OutputFeature.Overlays"/>
     /// </summary>
+    [Flags]
     public enum GridStyle
     {
         DisplayThirds = 1,
@@ -1562,6 +1563,7 @@ namespace LibAtem.Common
     /// <summary>
     /// <see cref="VideoFeature.RecordingFormat"/>
     /// </summary>
+    [Flags]
     public enum RecordingFormatFlags
     {
         FileMRate = 1,
